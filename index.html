@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下大雨與泌尿科的關係</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #e0f2fe, #bbdefb); /* Soft blue gradient background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1rem;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        .card-container {
+            background-color: #ffffff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Deeper shadow */
+            padding: 2.5rem;
+            max-width: 48rem; /* Wider card */
+            width: 100%;
+            animation: fadeIn 1s ease-out; /* Fade in animation */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .section-title {
+            background-color: #2563eb; /* Darker blue for title background */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2.25rem; /* Larger title */
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .info-section {
+            background-color: #e3f2fd; /* Lighter blue for info box */
+            border-left: 5px solid #1e88e5; /* Vibrant blue border */
+            color: #1a237e; /* Darker text for contrast */
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease-in-out; /* Smooth transition for show/hide */
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .info-section.show {
+            opacity: 1;
+            max-height: 500px; /* Max height to allow transition */
+            margin-top: 1.5rem;
+        }
+        .list-item-icon {
+            margin-right: 0.75rem;
+            font-size: 1.25rem;
+            vertical-align: middle;
+        }
+        .button-primary {
+            background-color: #3b82f6; /* Blue */
+            color: #ffffff;
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Fully rounded */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+            transform: translateY(0);
+        }
+        .button-primary:hover {
+            background-color: #2563eb; /* Darker blue on hover */
+            transform: translateY(-3px) scale(1.02); /* Lift and slightly enlarge */
+            box-shadow: 0 15px 20px -3px rgba(0, 0, 0, 0.15), 0 6px 8px -2px rgba(0, 0, 0, 0.08);
+        }
+        .button-primary:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+        }
+        .text-highlight {
+            color: #1c64f2; /* A slightly bolder blue for emphasis */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <h1 class="section-title">💧 下大雨與泌尿科的奇妙連結 🌧️</h1>
+
+        <p class="text-gray-800 mb-6 text-lg leading-relaxed">
+            您是否曾好奇，一場傾盆大雨和我們的泌尿系統健康之間，究竟藏著什麼樣的秘密關聯呢？乍聽之下，這兩者似乎風馬牛不相及，但深入探究，您會發現大雨所帶來的環境變化，確實可能對我們的泌尿系統產生間接的影響！
+        </p>
+
+        <p class="text-gray-700 mb-8 text-md leading-relaxed">
+            當天氣變得潮濕，氣溫也隨之起伏不定時，我們的身體便會面臨一場適應力的考驗。以下是一些您可能需要留意的潛在關聯：
+        </p>
+
+        <ul class="list-none text-gray-700 mb-8 space-y-4">
+            <li class="flex items-start">
+                <span class="list-item-icon">🦠</span>
+                <div>
+                    <strong class="text-highlight">泌尿道感染 (UTI) 風險悄悄升高：</strong>
+                    潮濕的環境簡直是細菌的溫床！如果衣物長期潮濕，或是個人衛生習慣稍有疏忽，特別是女性朋友，泌尿道感染的風險便會悄悄增加。溫暖潮濕的環境讓細菌更容易繁殖，進而引發惱人的膀胱炎或尿道炎。
+                </div>
+            </li>
+            <li class="flex items-start">
+                <span class="list-item-icon">💧</span>
+                <div>
+                    <strong class="text-highlight">飲水習慣的微妙變化：</strong>
+                    陰雨綿綿的日子，您是否也覺得沒那麼口渴，於是就不自覺地減少了飲水量？然而，足夠的水分攝取對於維持泌尿系統的「清道夫」功能至關重要！它能幫助我們沖刷尿道中的細菌，稀釋尿液，有效預防結石的形成。飲水不足可能導致尿液過於濃縮，增加泌尿道問題的機率喔！
+                </div>
+            </li>
+            <li class="flex items-start">
+                <span class="list-item-icon">💎</span>
+                <div>
+                    <strong class="text-highlight">腎結石與隱形脫水：</strong>
+                    雖然下雨本身不會直接「製造」腎結石，但如果大雨來臨前，您曾經歷過炎熱潮濕的天氣，導致大量出汗卻沒有及時補充水分，就可能陷入「隱形脫水」的危機。脫水可是腎結石形成的重要推手之一呢！
+                </div>
+            </li>
+            <li class="flex items-start">
+                <span class="list-item-icon">🛡️</span>
+                <div>
+                    <strong class="text-highlight">免疫力的小考驗：</strong>
+                    氣溫的驟降，或是連續多日的陰雨天氣，都可能讓我們的身體免疫力受到考驗，變得更容易受到各種感染的侵襲，其中當然也包括了泌尿系統的感染。
+                </div>
+            </li>
+        </ul>
+
+        <button id="toggleButton" class="button-primary block mx-auto mb-8">
+            💡 點擊揭曉更多預防小撇步！
+        </button>
+
+        <div id="moreInfo" class="info-section">
+            <h3 class="text-2xl font-bold mb-4 text-blue-900">✨ 如何在大雨天氣中守護您的泌尿系統？</h3>
+            <ul class="list-none space-y-3">
+                <li class="flex items-start">
+                    <span class="list-item-icon">🧼</span> <strong>保持個人衛生：</strong> 潮濕天氣更要加倍注意私密部位的清潔與乾燥，這是第一道防線！
+                </li>
+                <li class="flex items-start">
+                    <span class="list-item-icon">🥤</span> <strong>聰明多喝水：</strong> 即使不覺得口渴，也要提醒自己定時補充水分，讓身體的「排水系統」暢通無阻！
+                </li>
+                <li class="flex items-start">
+                    <span class="list-item-icon">🚽</span> <strong>有尿意就去：</strong> 千萬別憋尿！及時排尿能有效避免細菌在膀胱內「安營紮寨」。
+                </li>
+                <li class="flex items-start">
+                    <span class="list-item-icon">👕</span> <strong>穿著透氣衣物：</strong> 選擇棉質或透氣性佳的衣物，讓身體保持乾爽舒適。
+                </li>
+                <li class="flex items-start">
+                    <span class="list-item-icon">🧣</span> <strong>注意保暖：</strong> 尤其要保護好腰腹部，良好的血液循環是免疫力的基石。
+                </li>
+                <li class="flex items-start">
+                    <span class="list-item-icon">🍎</span> <strong>均衡飲食：</strong> 攝取足夠的維生素和礦物質，為您的免疫系統提供充足的「彈藥」！
+                </li>
+            </ul>
+        </div>
+
+        <p class="text-gray-600 text-sm text-center mt-8">
+            💖 如果您感到任何泌尿系統的不適，請務必及時尋求專業泌尿科醫師的協助，讓專業為您的健康把關！
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            const moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.classList.contains('show')) {
+                moreInfo.classList.remove('show');
+                this.innerHTML = '💡 點擊揭曉更多預防小撇步！';
+            } else {
+                moreInfo.classList.add('show');
+                this.innerHTML = '⬆️ 收起預防小撇步';
+            }
+        });
+    </script>
+</body>
+</html>
+
